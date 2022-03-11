@@ -30,6 +30,15 @@
       "program": "${workspaceRoot}/cli/cmd/turbo",
       "cwd": "${workspaceRoot}/examples/basic",
       "args": ["--version"]
+    },
+    {
+      "name": "Turbo Dry Run",
+      "type": "go",
+      "request": "launch",
+      "mode": "debug",
+      "program": "${workspaceRoot}/cli/cmd/turbo",
+      "cwd": "${workspaceRoot}/examples/kitchen-sink",
+      "args": ["run", "build", "--dry"]
     }
   ]
 }
